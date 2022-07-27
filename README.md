@@ -1,6 +1,14 @@
-# KPA-Flow
+# [CVPR2022]Learning Optical Flow with Kernel Patch Attention
 
-This project provides the source code for '[**Learning Optical Flow with Kernel Patch Attention**](https://openaccess.thecvf.com/content/CVPR2022/papers/Luo_Learning_Optical_Flow_With_Kernel_Patch_Attention_CVPR_2022_paper.pdf)'. (CVPR-2022)
+<h4 align="center">Ao Luo$^1$, Fan Fang$^2$, Xin Li$^2$, Shuaicheng Liu$^{3,1}$</h4>
+<h4 align="center">1. Megvii Research,             2. Group 42</h4>
+<h4 align="center">3. University of Electronic Science and Technology of China</h4>
+
+This project provides the official implementation of '[**Learning Optical Flow with Kernel Patch Attention**](https://openaccess.thecvf.com/content/CVPR2022/papers/Luo_Learning_Optical_Flow_With_Kernel_Patch_Attention_CVPR_2022_paper.pdf)'. (CVPR-2022)
+
+## Abstract
+Optical flow is a fundamental method used for quantitative motion estimation on the image plane. In the deep learning era, most works treat it as a task of ‘matching of features’, learning to pull matched pixels as close as possible in feature space and vice versa. However, spatial affinity (smoothness constraint), another important component for motion understanding, has been largely overlooked. In this paper, we introduce a novel approach, called kernel patch attention (KPA), to better resolve the ambiguity in dense matching by explicitly taking the local context relations into consideration. Our KPA operates on each local patch, and learns to mine the context affinities for better inferring the flow fields. It can be plugged into contemporary optical flow architecture and empower the model to conduct comprehensive motion analysis with both feature similarities and spatial relations. On Sintel dataset, the proposed KPA-Flow achieves the best performance with EPE of 1.35 on clean pass and 2.36 on final pass, and it sets a new record of 4.60% in F1-all on KITTI-15 benchmark.
+
 
 ## Overview
 
