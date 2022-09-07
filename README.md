@@ -19,7 +19,36 @@ We propose a novel approach, called kernel patch attention (KPA), to better reso
 
 ![KPA_overview](https://user-images.githubusercontent.com/47421121/175027700-d267dd6b-2208-41d9-b875-9d33653a8d48.png)
 
-## Code coming soon ...
+## Requirements
+
+Python 3.6 with following packages
+```Shell
+pytorch==1.6.0
+torchvision==0.7.0
+matplotlib
+scipy
+opencv-python
+tensorboard
+```
+(The code has been tested on Cuda 10.0.)
+
+
+## Usage
+
+1. The trained weights are available on [GoogleDrive](https://drive.google.com/drive/folders/1rt8q7EkbeWoivTxijtPJbOsdwGYctYt_?usp=sharing). Put `*.pth` files into folder `./weights`.
+
+2. Download [Sintel](http://sintel.is.tue.mpg.de/) and [KITTI](http://www.cvlibs.net/datasets/kitti/eval_scene_flow.php?benchmark=flow) dataset, and set the root path of each class in `./core/datasets.py`.
+
+
+3. Evaluation on Sintel
+```Shell
+./eval_sintel.sh
+```
+
+4. Evaluation on KITTI
+```Shell
+./eval_kitti.sh
+```
 
 
 ## Results
