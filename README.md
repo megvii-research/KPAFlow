@@ -49,6 +49,7 @@ tensorboard
 ```Shell
 ./eval_kitti.sh
 ```
+We extend our approach by appending the simplified KPA module to the encoder network. Experimental results demonstrate that the extended version achieves better performance than the original one.
 
 
 ## Results
@@ -68,3 +69,8 @@ If you think this work is helpful, please cite
 
 ```
 
+If you have any questions, please contact me at (aoluo_uestc@hotmail.com).
+
+## Acknowledgement
+
+The main framework is adapted from [RAFT](https://github.com/princeton-vl/RAFT). We thank the authors for the contribution.
